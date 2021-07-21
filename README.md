@@ -8,6 +8,8 @@
 Beacon Object File (BOF) that spawns an arbitrary process from beacons memory in a suspended state, inject shellcode, hijack main thread with APC, and execute shellcode; using the Early Bird injection method taught by @SEKTOR7net in RED TEAM Operator: Malware Development Intermediate.
 - [Sektor7 RED TEAM Operator: Malware Development Intermediate Course](https://institute.sektor7.net/courses/rto-maldev-intermediate/463257-code-injection/1435343-earlybird)
 
+![](/images/poc.png)
+
 ### Run from Cobalt Strike Beacon Console
 + After compile import the hollow.cna script into Cobalt Strikes Script Manager
 ```bash
