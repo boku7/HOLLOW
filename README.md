@@ -1,10 +1,10 @@
-## Authors:
+## HOLLOW - Cobalt Strike BOF
+##### Authors:
 + Bobby Cooke ([@0xBoku](https://twitter.com/0xBoku))
 + Justin Hamilton ([@JTHam0](https://twitter.com/JTHam0))
 + Octavio Paguaga ([@OakTree__](https://twitter.com/OakTree__))
 + Matt Kingstone ([@n00bRage](https://twitter.com/n00bRage))
 
-## HOLLOW - Cobalt Strike BOF
 Beacon Object File (BOF) that spawns an arbitrary process from beacons memory in a suspended state, inject shellcode, hijack main thread with APC, and execute shellcode; using the Early Bird injection method taught by @SEKTOR7net in RED TEAM Operator: Malware Development Intermediate.
 - [Sektor7 RED TEAM Operator: Malware Development Intermediate Course](https://institute.sektor7.net/courses/rto-maldev-intermediate/463257-code-injection/1435343-earlybird)
 
@@ -14,7 +14,7 @@ Beacon Object File (BOF) that spawns an arbitrary process from beacons memory in
 beacon> help hollow
 Synopsis: hollow /path/to/hollow/pe /local/path/to/shellcode.bin
 beacon> hollow svchost.exe /Users/bobby.cooke/popCalc.bin
-[*] HOLLOW - EarlyBird Remote Process Shellcode Injector (@0xBoku|github.com/boku7) | (@JTHam0|github.com/Rodion0) 
+[*] HOLLOW - EarlyBird Remote Process Shellcode Injector (@0xBoku|github.com/boku7) | (@JTHam0|github.com/Rodion0)
 [*]             (@n00bRage|github.com/josephkingstone) | (@OakTree__|github.com/git-oaktree)
 [*] Reading shellcode from: /Users/bobby.cooke/popCalc.bin
 [+] Success - Spawned process:  5464 (PID)
