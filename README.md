@@ -35,7 +35,7 @@ x86_64-w64-mingw32-gcc -c hollow.c -o hollow.o
   - Combine this with the PPID spoofing and blockdll features of SPAWN
 
 ### Credits / References
-+ Credit/shoutout to: Adam Chester @_xpn_ + @SEKTOR7net + Raphael Mudge
++ Credit/shoutout to: @SEKTOR7net + Raphael Mudge
 ##### Sektor7 Malware Dev Essentials course - learned how to do the early bird injection technique
 + https://institute.sektor7.net/red-team-operator-malware-development-essentials
 ##### Raphael Mudge - Beacon Object Files - Luser Demo
