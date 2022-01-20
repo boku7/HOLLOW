@@ -28,7 +28,7 @@ beacon> hollow svchost.exe /Users/bobby.cooke/popCalc.bin
 
 ### Compile with x64 MinGW (only tested from macOS):
 ```bash
-x86_64-w64-mingw32-gcc -c hollow.x64.c -o hollow.o
+x86_64-w64-mingw32-gcc -c hollow.x64.c -o hollow.x64.o
 ```
 
 ### To Do List
